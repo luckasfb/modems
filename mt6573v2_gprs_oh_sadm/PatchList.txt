@@ -1,0 +1,168 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02972224
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Modify the GPIO setting for MT6162
+  Force GPIO 27~30 to BSI1 for MT6162 on MT6573, and GPIO 31~34 to BSI0 for other 2G RF chips
+Associated Files: 
+  l1_dm\l1d\m12190.c
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02967392
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+  Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+Associated Files: 
+  l1_dm\l1d\l1d_data.c
+  l1_dm\l1d\l1d_data.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12197.c
+  l1_dm\l1d\m12197.h
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+  mtk_lib\MT6573\S01\GPRS\interface_classb.lib
+  mtk_lib\MT6573\S01\GPRS\cct.lib
+  mtk_lib\MT6573\S01\GPRS\ft.lib
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02986405
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Change Feature] Single AP Dual Modem support
+  Add new command for AP +ESADM to set SIM power-on mode.
+  MD will boot-up according to this setting and skip the ignored SIM.
+  The SIM1 is required to be turned-on currently.
+Associated Files: 
+  ps\l4\atci\include\at_cmd.def
+  ps\l4\include\l4c_context.h
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_GPRS(ANDROID_GEMINI_OH).mak
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+
+
+#==============================================================================
+# CR list that MediaTek patched for build error(s)
+# ------------------------
+# For each of these CRs were used to solve build errors that caused by above patch.
+#==============================================================================
+Patch Type:  Build Error Patch
+CR ID:       MAUI_02984752
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C] AT+EBOOT support for change power on mode
+  AT+EBOOT=0   => normal boot up
+  AT+EBOOT=1   =>  exception boot up
+  
+  AT+EBOOT should used before the first AT+CFUN/AT+EFUN/CFUN_STATE_REQ/EFUN_STATE_REQ
+Associated Files: 
+  ps\l4\atci\include\at_cmd.def
+  ps\l4\l4c\include\proc\l4c_eq_cmd.h
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_GPRS(ANDROID_GEMINI_OH).mak

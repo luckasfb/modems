@@ -1,0 +1,98 @@
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  custom\common\custom_nvram_sec.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  custom\common\custom_nvram_sec.c
+  custom\common\custom_nvram_sec.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  custom\common\custom_nvram_sec.c
+  custom\common\custom_nvram_sec.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  
+  

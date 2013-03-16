@@ -1,0 +1,246 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02975635
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [MAC] MS Radio Capability for DUAL SIM
+  Switch SIM module when reporting capability
+Associated Files: 
+  mtk_lib\MT6573\S01\GPRS\rr_classb2.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03061521
+Severity:    N/A
+eService ID: N/A
+Description: 
+  通话的过程中，异常断掉之后，电话一直不能呼叫和接通
+Associated Files: 
+  mtk_lib\MT6573\S01\GPRS\rr_classb2.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03062397
+Severity:    2.Normal
+eService ID: N/A
+Description: 
+  [Free test][Call]MO call fail via CU SIM card
+  For AT+CRSM, L4C has no need to set SMU action.
+  SIM task will process request one by one.
+  This revise avoid smu action change to CRSM_EXE and didn't handle L4CSMU_SECURITY_CNF.
+  
+Associated Files: 
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03005315
+Severity:    N/A
+eService ID: N/A
+Description: 
+  create new projects (08/15~08/27)
+Associated Files: 
+  custom\app\OPPO13_MODEM_BB\app_features.c
+  custom\app\OPPO13_MODEM_BB\app_features.h
+  custom\app\OPPO13_MODEM_BB\custom_led_patterns.c
+  custom\app\OPPO13_MODEM_BB\custom_led_patterns.h
+  custom\app\OPPO13_MODEM_BB\custom_mmi_cache_config.c
+  custom\app\OPPO13_MODEM_BB\custom_nvram_editor_data_item.h
+  custom\app\OPPO13_MODEM_BB\nvram_user_config.c
+  custom\app\OPPO13_MODEM_BB\nvram_user_custpack.c
+  custom\app\OPPO13_MODEM_BB\nvram_user_defs.h
+  custom\app\OPPO13_MODEM_BB\resource_custpack_jtbl.c
+  custom\app\OPPO13_MODEM_BB\resource_custpack_jtbl.h
+  custom\app\OPPO13_MODEM_BB\resource_verno.h
+  custom\app\OPPO13_MODEM_BB\text_encoding.c
+  custom\app\OPPO13_MODEM_BB\text_encoding.h
+  custom\audio\OPPO13_MODEM_BB\afe.c
+  custom\audio\OPPO13_MODEM_BB\AR1000.c
+  custom\audio\OPPO13_MODEM_BB\audcoeff.c
+  custom\audio\OPPO13_MODEM_BB\custpack_audio.c
+  custom\audio\OPPO13_MODEM_BB\ext_dac_drv.c
+  custom\audio\OPPO13_MODEM_BB\i2s_input_drv.c
+  custom\audio\OPPO13_MODEM_BB\MT6188.c
+  custom\audio\OPPO13_MODEM_BB\MT6189.c
+  custom\audio\OPPO13_MODEM_BB\MT6616.c
+  custom\audio\OPPO13_MODEM_BB\nvram_default_audio.c
+  custom\audio\OPPO13_MODEM_BB\nvram_default_audio.h
+  custom\audio\OPPO13_MODEM_BB\resource_audio.c
+  custom\audio\OPPO13_MODEM_BB\resource_audio.h
+  custom\audio\OPPO13_MODEM_BB\resource_audio_func.c
+  custom\audio\OPPO13_MODEM_BB\resource_audio_jtbl.c
+  custom\drv\gps\OPPO13_MODEM_BB\gpsmtk_config.c
+  custom\drv\LCD\OPPO13_MODEM_LCM\lcd.c
+  custom\drv\LCD\OPPO13_MODEM_LCM\lcd_hw.h
+  custom\drv\LCD\OPPO13_MODEM_LCM\lcd_sw.h
+  custom\drv\LCD\OPPO13_MODEM_LCM\lcd_sw_inc.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\adc_channel.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\adc_channel.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\alerter_tone.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\alerterdrv.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\aux_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\aux_custom.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\batvalue.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\chr_parameter.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\chr_parameter.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\cmmb_custom_if.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_drv_init.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_equipment.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_equipment.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_hw_default.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_hw_default.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_idp.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_idp.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\custom_sim_driver.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\eint_def.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\exif_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\gpio_def.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\gpio_drv.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\irda_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\keypad_def.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\msdc_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\MT6302_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\MT6302_custom.h
+  custom\drv\misc_drv\OPPO13_MODEM_BB\pmic_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\pmu_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\pwmdrv.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\touch_panel_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\touch_panel_spi.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\tv_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\two_mic_NR_custom_if.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\uart_def.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\uem_gpio.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\usb_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\usb_host_ms_custom.c
+  custom\drv\misc_drv\OPPO13_MODEM_BB\codegen\codegen.dws
+  custom\meta\OPPO13_MODEM_BB\afe.c
+  custom\meta\OPPO13_MODEM_BB\AR1000.c
+  custom\meta\OPPO13_MODEM_BB\audcoeff.c
+  custom\meta\OPPO13_MODEM_BB\custpack_audio.c
+  custom\meta\OPPO13_MODEM_BB\ext_dac_drv.c
+  custom\meta\OPPO13_MODEM_BB\ft_customize.c
+  custom\meta\OPPO13_MODEM_BB\i2s_input_drv.c
+  custom\meta\OPPO13_MODEM_BB\MT6188.c
+  custom\meta\OPPO13_MODEM_BB\MT6189.c
+  custom\meta\OPPO13_MODEM_BB\MT6616.c
+  custom\meta\OPPO13_MODEM_BB\nvram_default_audio.c
+  custom\meta\OPPO13_MODEM_BB\resource_audio.c
+  custom\meta\OPPO13_MODEM_BB\resource_audio_func.c
+  custom\meta\OPPO13_MODEM_BB\resource_audio_jtbl.c
+  custom\ps\OPPO13_MODEM_BB\custom_poc_config.c
+  custom\ps\OPPO13_MODEM_BB\customer_cm_retry_count.c
+  custom\ps\OPPO13_MODEM_BB\customer_ps_inc.h
+  custom\ps\OPPO13_MODEM_BB\customer_pwr_level_report.c
+  custom\ps\OPPO13_MODEM_BB\Customer_sim_voltage_support.c
+  custom\ps\OPPO13_MODEM_BB\customer_sms_discard_patent.c
+  custom\ps\OPPO13_MODEM_BB\customer_sms_msg_box_num.c
+  custom\ps\OPPO13_MODEM_BB\customer_sms_prefer_order.c
+  custom\ps\OPPO13_MODEM_BB\customer_sms_tl_retry.c
+  custom\ps\OPPO13_MODEM_BB\customer_supc_config.c
+  custom\system\OPPO13_MODEM_BB\custom_MemoryDevice.h
+  make\OPPO13_MODEM_GPRS.mak
+  make\Verno_OPPO13_MODEM.bld
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+  mtk_lib\MT6573\S01\GPRS\cct.lib
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+  mtk_lib\MT6573\S01\GPRS\rr_classb2.lib
+  mtk_lib\MT6573\S01\GPRS\applib.lib
+  mtk_lib\MT6573\S01\GPRS\ft.lib
+  mtk_lib\MT6573\S01\GPRS\gps.lib
+  mtk_lib\MT6573\S01\GPRS\mm_classb2.lib
+  mtk_lib\MT6573\S01\GPRS\sim2.lib
+  mtk_lib\MT6573\S01\GPRS\sm.lib
+  mtk_lib\MT6573\S01\GPRS\stacklib.lib
+  mtk_lib\MT6573\S01\GPRS\flc2.lib
+  mtk_lib\MT6573\S01\GPRS\gfx_core16.lib
+  mtk_lib\MT6573\S01\GPRS\nvram_sec.lib
+  mtk_lib\MT6573\S01\GPRS\tst.lib
+  mtk_lib\MT6573\S01\GPRS\audio_comp.lib
+  mtk_lib\MT6573\S01\GPRS\camera_sec.lib
+  mtk_lib\MT6573\S01\GPRS\che.lib
+  mtk_lib\MT6573\S01\GPRS\fdm.lib
+  mtk_lib\MT6573\S01\GPRS\gfx_core32.lib
+  mtk_lib\MT6573\S01\GPRS\init.lib
+  mtk_lib\MT6573\S01\GPRS\ppp.lib
+  mtk_lib\MT6573\S01\GPRS\sst.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03025739
+Severity:    N/A
+eService ID: N/A
+Description: 
+  @Passport for project creation 0913 make file
+Associated Files: 
+  custom\l1_rf\OPPO13_MODEM_MT6162\l1d_custom_rf.h
+  custom\l1_rf\OPPO13_MODEM_MT6162\m12193.c
+  make\OPPO13_MODEM_GPRS.mak
+  mtk_lib\MT6573\S01\GPRS\cct.lib
+  mtk_lib\MT6573\S01\GPRS\ft.lib
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03027311
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Check-in for the OPPO13 custom folder
+Associated Files: 
+  custom\l1_rf\OPPO13_MODEM_MT6162\m12193.c
+
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03028148
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Need Patch] [Volunteer Patch]add record data nodify for handshake
+  To send the data to AP must be waited until AP’s ack
+Associated Files: 
+  DEP_CR_LIST.txt
+  hal\audio\src\v2\afe2.c
+  hal\audio\src\v2\spc_drv.c
+  hal\audio\src\v2\wav_thumb.c
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03052612
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [GAS][Gemini] Update semaphore service type for CS_CM/CS_SIG/PS
+  Fix the Gemini flag setting during LU and MO call
+Associated Files: 
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+  mtk_lib\MT6573\S01\GPRS\rr_classb2.lib

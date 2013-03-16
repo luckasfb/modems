@@ -1,0 +1,154 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02936962
+Severity:    N/A
+eService ID: N/A
+Description: 
+  Disable EGSM Capability [add feature option: DISABLE_EGSM_CAP]
+  Dynmically switch the band setting of enable/disable EGSM band but without release the MODEM lib to customer.
+Associated Files: 
+  custom\app\MT6573V2_MODEM_BB\nvram_user_custpack.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_HSPA(NO_WB).mak
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_HSPA(NO_WB).mak
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03028148
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Need Patch] [Volunteer Patch]add record data nodify for handshake
+  To send the data to AP must be waited until AP¡¦s ack
+Associated Files: 
+  DEP_CR_LIST.txt
+  hal\audio\src\v2\afe2.c
+  hal\audio\src\v2\spc_drv.c
+  hal\audio\src\v2\wav_thumb.c
+
+
+
+#==============================================================================
+# CR list that MediaTek patched for build error(s)
+# ------------------------
+# For each of these CRs were used to solve build errors that caused by above patch.
+#==============================================================================
+Patch Type:  Build Error Patch
+CR ID:       MAUI_02974205
+Severity:    2.Normal
+eService ID: N/A
+Description: 
+  WB DMNR LID Control
+  add DMNR patch
+Associated Files: 
+  DEP_CR_LIST.txt
+  custom\common\hal\aud_common.c
+  custom\common\hal\audcoeff_default.h
+  hal\audio\src\v1\sp\audio_service.c
+  hal\audio\src\v2\am.c
+  hal\audio\src\v2\audio_service.c
+  hal\audio\src\v2\pcm4way.c
+  hal\audio\src\v2\sp_drv.c
+  hal\audio\src\v2\spc_drv.c
+  hal\audio\src\v2\vm.c
+  hal\audio\src\v2\inc\audio_em_struct.h
+  hal\audio\src\v2\inc\exp_SphFasTypDef.h
+  hal\audio\src\v2\inc\pcm4way.h
+  hal\viti\speech\SpeechEnhancement\BKF\src\bkf_Api.c.wraper.old
+  interface\hal\audio\audio_enum.h
+  interface\hal\audio\l1audio.h
+  nvram\src\nvram_io.c
+  nvram\src\nvram_l1def.c
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+

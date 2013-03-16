@@ -1,0 +1,73 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03071182
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [FT-深圳]??下，卡1?通3G卡2?通3G卡，?据?接使用卡2下??，重新找网，卡1和卡2有?机提示?
+  注意: 下面所填寫的資訊，將會直接提供給客戶。
+  Notice: Following information added by you will be provided to customer directly.
+  
+  [Title for Customer]
+  Gemini V2 patch - Seldom assertion SIM2 packet transfer and SIM1 change state from 3G standby to 3G active;
+  
+  [Description]
+  Gemini V2 patch - SIM2 active and SIM1 change state from 3G standby to 3G active;
+  
+  [Impact]
+  Seldom assert on SIM1 state change mismatch
+  
+  [Repeat Step]
+  SIM2 active and packet transfer; SIM1 change 3G standby to 3G active
+  [Root Cause]
+  Gemini V2 cross layer context switch risk
+  [Solution]
+  Stop Gemini V1 cross layer procedure then enter Gemini V2 procedure
+  [Affected Customer Branches]
+  11AW1112MP
+  11AW1112_MOTO_ODM_SP
+  11AW1112SP1
+  11AMDW1137SP
+  
+  [Affected Platforms]
+  MT6276
+  MT6573
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12197.h
+  nvram\src\nvram_l1def.c
+  nvram\src\nvram_ul1def.c
+  ul1_hs\ul1d\wdata.c
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+

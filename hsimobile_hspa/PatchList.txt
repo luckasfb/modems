@@ -1,0 +1,230 @@
+#==============================================================================
+# CR list that customer request but not release
+# -----------------------------------------
+# These CRs are not included in this release probably due to
+#   1. The patch files were already up-to-date in customer site
+#   2. The patch files belong to an unsupported feature
+#==============================================================================
+MAUI_02904474
+MAUI_02946792
+MAUI_02988794
+MAUI_02023884
+MAUI_02979706
+MAUI_02998472
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03006419
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [MT6573][WW FT][China-Yinchuan][Free test]Modem EE when using Google map
+  Modify the handling procedure for AGPS CP measurement and avoid the inconsistence between MEME and ULCS.
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03007137
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [MT6573][WW FT][China-Yinchuan][Call Test-2.11]Cannot dial 112
+  Modify and correct the handling procedure for AGPS CP measurement
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+
+#==============================================================================
+# CR list that customer request but not release
+# -----------------------------------------
+# These CRs are not included in this release probably due to
+#   1. The patch files were already up-to-date in customer site
+#   2. The patch files belong to an unsupported feature
+#==============================================================================
+MAUI_02979706
+MAUI_02967680
+MAUI_02952221
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03006419
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [MT6573][WW FT][China-Yinchuan][Free test]Modem EE when using Google map
+  Modify the handling procedure for AGPS CP measurement and avoid the inconsistence between MEME and ULCS.
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03007137
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [MT6573][WW FT][China-Yinchuan][Call Test-2.11]Cannot dial 112
+  Modify and correct the handling procedure for AGPS CP measurement
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03007918
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [WW FT][Singapore][Call][3G][Singtel+Singtel]Assert fail: csce_fsm.c 5753 - URR
+  Stop Incorrect SIB16 timer in 3G active state
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03014702
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [WW FT][Russia][Moscow][Luffy76][Overnight Test][Megafone+Tele2] Assert fail: csce_fsm.c 19431 - URR
+  clear the global variable after finish using it.
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03041360
+Severity:    N/A
+eService ID: N/A
+Description: 
+  create new projects (10/03~10/14)
+Associated Files: 
+  custom\app\HSIMOBILE73_MODEM_BB\app_features.c
+  custom\app\HSIMOBILE73_MODEM_BB\app_features.h
+  custom\app\HSIMOBILE73_MODEM_BB\custom_led_patterns.c
+  custom\app\HSIMOBILE73_MODEM_BB\custom_led_patterns.h
+  custom\app\HSIMOBILE73_MODEM_BB\custom_mmi_cache_config.c
+  custom\app\HSIMOBILE73_MODEM_BB\custom_nvram_editor_data_item.h
+  custom\app\HSIMOBILE73_MODEM_BB\nvram_user_config.c
+  custom\app\HSIMOBILE73_MODEM_BB\nvram_user_custpack.c
+  custom\app\HSIMOBILE73_MODEM_BB\nvram_user_defs.h
+  custom\app\HSIMOBILE73_MODEM_BB\resource_custpack_jtbl.c
+  custom\app\HSIMOBILE73_MODEM_BB\resource_custpack_jtbl.h
+  custom\app\HSIMOBILE73_MODEM_BB\resource_verno.h
+  custom\app\HSIMOBILE73_MODEM_BB\text_encoding.c
+  custom\app\HSIMOBILE73_MODEM_BB\text_encoding.h
+  custom\audio\HSIMOBILE73_MODEM_BB\afe.c
+  custom\audio\HSIMOBILE73_MODEM_BB\AR1000.c
+  custom\audio\HSIMOBILE73_MODEM_BB\audcoeff.c
+  custom\audio\HSIMOBILE73_MODEM_BB\custpack_audio.c
+  custom\audio\HSIMOBILE73_MODEM_BB\ext_dac_drv.c
+  custom\audio\HSIMOBILE73_MODEM_BB\i2s_input_drv.c
+  custom\audio\HSIMOBILE73_MODEM_BB\MT6188.c
+  custom\audio\HSIMOBILE73_MODEM_BB\MT6189.c
+  custom\audio\HSIMOBILE73_MODEM_BB\MT6616.c
+  custom\audio\HSIMOBILE73_MODEM_BB\nvram_default_audio.c
+  custom\audio\HSIMOBILE73_MODEM_BB\nvram_default_audio.h
+  custom\audio\HSIMOBILE73_MODEM_BB\resource_audio.c
+  custom\audio\HSIMOBILE73_MODEM_BB\resource_audio.h
+  custom\audio\HSIMOBILE73_MODEM_BB\resource_audio_func.c
+  custom\audio\HSIMOBILE73_MODEM_BB\resource_audio_jtbl.c
+  custom\drv\gps\HSIMOBILE73_MODEM_BB\gpsmtk_config.c
+  custom\drv\LCD\HSIMOBILE73_MODEM_LCM\lcd.c
+  custom\drv\LCD\HSIMOBILE73_MODEM_LCM\lcd_hw.h
+  custom\drv\LCD\HSIMOBILE73_MODEM_LCM\lcd_sw.h
+  custom\drv\LCD\HSIMOBILE73_MODEM_LCM\lcd_sw_inc.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\adc_channel.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\adc_channel.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\alerter_tone.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\alerterdrv.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\aux_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\aux_custom.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\batvalue.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\chr_parameter.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\chr_parameter.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\cmmb_custom_if.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_drv_init.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_equipment.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_equipment.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_hw_default.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_hw_default.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_idp.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_idp.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\custom_sim_driver.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\eint_def.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\exif_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\gpio_def.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\gpio_drv.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\irda_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\keypad_def.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\msdc_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\MT6302_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\MT6302_custom.h
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\pmic_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\pmu_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\pwmdrv.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\touch_panel_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\touch_panel_spi.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\tv_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\two_mic_NR_custom_if.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\uart_def.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\uem_gpio.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\usb_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\usb_host_ms_custom.c
+  custom\drv\misc_drv\HSIMOBILE73_MODEM_BB\codegen\codegen.dws
+  custom\meta\HSIMOBILE73_MODEM_BB\ft_customize.c
+  custom\ps\HSIMOBILE73_MODEM_BB\custom_poc_config.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_cm_retry_count.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_ps_inc.h
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_pwr_level_report.c
+  custom\ps\HSIMOBILE73_MODEM_BB\Customer_sim_voltage_support.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_sms_discard_patent.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_sms_msg_box_num.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_sms_prefer_order.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_sms_tl_retry.c
+  custom\ps\HSIMOBILE73_MODEM_BB\customer_supc_config.c
+  custom\system\HSIMOBILE73_MODEM_BB\custom_MemoryDevice.h
+  make\HSIMOBILE73_MODEM_HSPA.mak
+  make\Verno_HSIMOBILE73_MODEM.bld
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\stacklib.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core16.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+  mtk_lib\MT6573\S01\HSPA\camera_sec.lib
+  mtk_lib\MT6573\S01\HSPA\che.lib
+  mtk_lib\MT6573\S01\HSPA\fdm.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core32.lib
+  mtk_lib\MT6573\S01\HSPA\init.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\ppp.lib
+  mtk_lib\MT6573\S01\HSPA\sst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+

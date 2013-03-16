@@ -1,0 +1,72 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02936962
+Severity:    N/A
+eService ID: N/A
+Description: 
+  Disable EGSM Capability [add feature option: DISABLE_EGSM_CAP]
+  Dynmically switch the band setting of enable/disable EGSM band but without release the MODEM lib to customer.
+Associated Files: 
+  custom\app\MT6573V2_MODEM_BB\nvram_user_custpack.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_HSPA(NO_WB).mak
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+
+

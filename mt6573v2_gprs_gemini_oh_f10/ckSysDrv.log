@@ -1,0 +1,113 @@
+(NOR)...
+===========================================================
+                                               Byte Cluster
+===========================================================
+FS Total Size                               4194304 
+FS First Drive Size                               0 
+FS Overhead for (MBR + PBR + Root Dir)        11264
+FDM Overhead (NOR)                                 107520
+===========================================================
+Free Space for Folders and Applications     4075520    3980
+
+-----------------------------------------------------------
+Cluster Size                                   1024       1
+-----------------------------------------------------------
+FAT Overhead for Sub Dir                       4096       4
+-----------------------------------------------------------
+Package file size                                         0
+Info file A                                               0
+Info file B                                               0
+Extra size                                                0
+NVRAM_EF_SYS_LID                                 72       2
+NVRAM_EF_BRANCH_VERNO_LID                        36       1
+NVRAM_EF_FLAVOR_VERNO_LID                        36       1
+NVRAM_EF_SECUPACK_VERNO_LID                       4       1
+NVRAM_EF_NVRAM_CONFIG_LID                       260       2
+NVRAM_EF_SYS_EXCEPTION_LID                     5140       6
+NVRAM_EF_SYS_STATISTICS_LID                    1046       2
+NVRAM_EF_IMPT_COUNTER_LID                         4       1
+NVRAM_EF_L1_AGCPATHLOSS_LID                     262       1
+NVRAM_EF_L1_RAMPTABLE_GSM900_LID                666       1
+NVRAM_EF_L1_RAMPTABLE_DCS1800_LID               666       1
+NVRAM_EF_L1_AFCDATA_LID                          10       1
+NVRAM_EF_L1_TXIQ_LID                             46       1
+NVRAM_EF_L1_RFSPECIALCOEF_LID                   210       1
+NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID            18       1
+NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID           18       1
+NVRAM_EF_L1_CRYSTAL_AFCDATA_LID                  34       1
+NVRAM_EF_L1_CRYSTAL_CAPDATA_LID                   6       1
+NVRAM_EF_L1_GMSK_TX_POWER_ROLLBACK_TABLE_LID         22       1
+NVRAM_EF_L1_GMSK_TXPC_LID                       246       1
+NVRAM_EF_L1_LNAPATHLOSS_LID                     132       1
+NVRAM_EF_ADC_LID                                106       1
+NVRAM_EF_BARCODE_NUM_LID                         66       1
+NVRAM_EF_CAL_FLAG_LID                           314       1
+NVRAM_EF_CAL_DATA_CHECK_LID                    1354       2
+NVRAM_EF_L1_2G_RF_PARAMETER_LID                 510       1
+NVRAM_EF_BAND_INFO_LID                           16       1
+NVRAM_EF_TST_FILTER_LID                        1559       2
+NVRAM_EF_PORT_SETTING_LID                        38       1
+NVRAM_EF_CLASSMARK_RACAP_LID                     18       1
+NVRAM_EF_SIM_ASSERT_LID                        1440       2
+NVRAM_EF_RTC_DATA_LID                            18       1
+NVRAM_EF_NET_PAR_LID                           2002       2
+NVRAM_EF_CUST_HW_LEVEL_TBL_LID                  442       1
+NVRAM_EF_UEM_MANUFACTURE_DATA_LID               242       1
+NVRAM_EF_UEM_RMI_DATA_LID                       218       1
+NVRAM_EF_CUST_ACOUSTIC_DATA_LID                 185       1
+NVRAM_EF_AUDIO_PARAM_LID                       1942       2
+NVRAM_EF_AUDIO_WB_SPEECH_INPUT_FIR_LID         1082       2
+NVRAM_EF_AUDIO_WB_SPEECH_OUTPUT_FIR_LID        1082       2
+NVRAM_EF_AUDIO_WB_SPEECH_MODE_PARAM_LID         258       1
+NVRAM_EF_GPS_SETTING_DATA_LID                    50       1
+NVRAM_EF_MNL_SETTING_DATA_LID                    18       1
+NVRAM_EF_TCM_PDP_PROFILE_LID                   1620       2
+NVRAM_EF_CFU_FLAG_LID                             8       1
+NVRAM_EF_MM_EQPLMN_LOCIGPRS_LID                 228       1
+NVRAM_EF_CTM_DEFAULT_SETTINGS_LID                16       1
+NVRAM_EF_ALS_LINE_ID_LID                          8       1
+NVRAM_EF_MSCAP_LID                               18       1
+NVRAM_EF_SMSAL_SMS_LID                         3720       4
+NVRAM_EF_SMSAL_MAILBOX_ADDR_LID                 144       1
+NVRAM_EF_SMSAL_COMMON_PARAM_LID                  36       1
+NVRAM_EF_SMSAL_SMSP_LID                         168       1
+NVRAM_EF_SMSAL_MWIS_LID                          48       1
+NVRAM_EF_CB_DEFAULT_CH_LID                       44       1
+NVRAM_EF_CB_CH_INFO_LID                         232       1
+NVRAM_EF_IMEI_IMEISV_LID                        120       1
+NVRAM_EF_SML_LID                               3800       4
+NVRAM_EF_SIM_LOCK_LID                           760       2
+NVRAM_EF_MS_SECURITY_LID                         80       1
+NVRAM_EF_PHB_LID                                880       1
+NVRAM_EF_PHB_LN_ENTRY_LID                     11112      11
+NVRAM_EF_PHB_LN_TYPE_SEQ_LID                    124       1
+NVRAM_EF_PS_CONFORMANCE_TESTMODE_LID              6       1
+NVRAM_EF_ABM_PS_QOS_PROFILE_LID                 116       1
+NVRAM_EF_SYS_CACHE_OCTET_LID                    200       1
+NVRAM_EF_RAC_PREFERENCE_LID                      18       1
+NVRAM_EF_AUDIO_DC_CALIBRATION_LID                 4       1
+NVRAM_EF_GIS_GPS_SETTING_DATA_LID                94       1
+NVRAM_EF_AGPS_SETTING_LID                         3       1
+NVRAM_EF_TIME_SYNC_SETTING_LID                    3       1
+NVRAM_EF_AGPS_MTLR_LID                            3       1
+NVRAM_EF_AGPS_SEND_LOCATION_LID                   3       1
+NVRAM_EF_AGPS_CP_CONFIG_LID                      88       1
+NVRAM_EF_EM_GPS_POS_TYPE_LID                      3       1
+NVRAM_EF_SRV_REMINDER_Q_LID                     978       1
+NVRAM_EF_GPS_MMI_SETTING_DATA_LID                 6       1
+NVRAM_EF_GPS_MMI_SIM_DATA_LID                    10       1
+
+TOTAL                                         46595     111
+-----------------------------------------------------------
+
+TOTAL                                             0       0
+===========================================================
+
+REPORT
+===========================================================
+Cluster Size (Bytes)                                   1024
+Free Space (Clusters)                                  3980
+Folders and Applications Requirement (Clusters)         115
+
+RESULT: PASS!
+3865 clusters are left (3865.0 KB = 3.77 MB)

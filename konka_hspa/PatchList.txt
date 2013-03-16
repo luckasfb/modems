@@ -1,0 +1,286 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03079533
+Severity:    N/A
+eService ID: N/A
+Description: 
+  不插卡状态下modm不停的重启
+  The first AT+EFUN in boot up, modem response "OK" when get L4CSMU_STARTUP_CNF and AP might send another AT+EFUN to switch RF immediately. However, RAC activation may not complete in that time and will cause RAC ASSERT if receive SET_RAT_MODE_REQ.
+  
+  Scenario: 
+  AT+EFUN=0
+  AT+EFUN=1
+  
+  Temporary solution is postpone the SET_RAT_MODE_REQ of AT+EFUN=1. Only change the cfun_state to 1 and rac_current_action to RFON_SET_RAT_MDOE.
+  While receive RAC_ACT_CNF, will continue the RF ON process
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+
+#==============================================================================
+# CR list that MediaTek patched for build error(s)
+# ------------------------
+# For each of these CRs were used to solve build errors that caused by above patch.
+#==============================================================================
+Patch Type:  Build Error Patch
+CR ID:       MAUI_03060456
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [2011][Germany][MT6573_VF] Issue ID 17 - Ciphering Indicator is missing
+  Add +ECIPH URC
+  
+  +ECIPH:  <sim_cipher_ind>,<mm_connection>,<cs_cipher_on>,<ps_cipher_on>
+  
+  <sim_cipher_ind>: integer   // SIM卡EF_AD的operator setting
+          0: do not show cipher indication
+          1: show cipher indication
+  
+  <mm_connection>: integer   // 是否存在CC,SS,SMS connection
+          0: no connection
+          1: has connection
+  
+  <cs_cipher_on>: integer   // CS domain是否有加密
+          0: no cipher
+          1: cipher
+          255: unknow
+  
+  <ps_cipher_on>: integer   // PS domain是否有加密
+          0: no cipher
+          1: cipher
+          255: unknow
+Associated Files: 
+  ps\l4\atci\include\rmmi_common_enum.h
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02973698
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C]Modem support Fast dormancy
+Associated Files: 
+  hal\system\ipc\src\ccci.c
+  interface\hal\system\ccci.h
+  interface\ps\sap\ps_public_l4_sap.h
+  mtk_lib\MT6573\S01\HSPA\kal.lib
+  mtk_lib\MT6573\S01\HSPA\sst.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\3g324m_tvt.lib
+  mtk_lib\MT6573\S01\HSPA\adaptation.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\as_semaphore_utility.lib
+  mtk_lib\MT6573\S01\HSPA\asn1_re.lib
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+  mtk_lib\MT6573\S01\HSPA\camera_sec.lib
+  mtk_lib\MT6573\S01\HSPA\cc.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\che.lib
+  mtk_lib\MT6573\S01\HSPA\ciss.lib
+  mtk_lib\MT6573\S01\HSPA\cmux.lib
+  mtk_lib\MT6573\S01\HSPA\config.lib
+  mtk_lib\MT6573\S01\HSPA\data.lib
+  mtk_lib\MT6573\S01\HSPA\dp_engine.lib
+  mtk_lib\MT6573\S01\HSPA\drv_sec.lib
+  mtk_lib\MT6573\S01\HSPA\fdm.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\fsm.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core16.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core32.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\init.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\ll1.lib
+  mtk_lib\MT6573\S01\HSPA\llc.lib
+  mtk_lib\MT6573\S01\HSPA\mcd.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\mtkdebug.lib
+  mtk_lib\MT6573\S01\HSPA\nucleus_v2.lib
+  mtk_lib\MT6573\S01\HSPA\nucleus_v2_ctrl_code.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\ppp.lib
+  mtk_lib\MT6573\S01\HSPA\ratcm.lib
+  mtk_lib\MT6573\S01\HSPA\ratdm.lib
+  mtk_lib\MT6573\S01\HSPA\rfc2507.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\rrlp.lib
+  mtk_lib\MT6573\S01\HSPA\rsva.lib
+  mtk_lib\MT6573\S01\HSPA\scsi.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\sms.lib
+  mtk_lib\MT6573\S01\HSPA\sndcp.lib
+  mtk_lib\MT6573\S01\HSPA\stacklib.lib
+  mtk_lib\MT6573\S01\HSPA\sys_sec.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  mtk_lib\MT6573\S01\HSPA\ulcs.lib
+  mtk_lib\MT6573\S01\HSPA\ups.lib
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02962284
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [Critical][Power consumption]3G modem can't sleep when signal is weak
+  Unlock L1 when entering PCH with URB existed.
+  
+Associated Files: 
+  make\uas\uas.mak
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02976891
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [UL1D][Modify] Enable PA phase rotation compensation
+  Enable PA phase compensation feature and default value of compensation is zero phase
+Associated Files: 
+  custom\ul1_rf\CUSTOM_MT6162\u12193.c
+  ul1_hs\ul1d\ul1d_rf.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  
+  
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02972090
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  DMNR - calibration free and stationary noise improvement
+  improve stationary noise
+Associated Files: 
+  DEP_CR_LIST.txt
+  custom\common\hal\aud_common.c
+  custom\common\hal\audcoeff_default.h
+  hal\audio\src\v1\sp\audio_service.c
+  hal\audio\src\v2\am.c
+  hal\audio\src\v2\audio_service.c
+  hal\audio\src\v2\pcm4way.c
+  hal\audio\src\v2\sp_drv.c
+  hal\audio\src\v2\spc_drv.c
+  hal\audio\src\v2\vm.c
+  hal\audio\src\v2\inc\audio_em_struct.h
+  hal\audio\src\v2\inc\exp_SphFasTypDef.h
+  hal\audio\src\v2\inc\pcm4way.h
+  hal\viti\speech\SpeechEnhancement\BKF\src\bkf_Api.c.wraper.old
+  interface\hal\audio\audio_enum.h
+  interface\hal\audio\l1audio.h
+  nvram\src\nvram_io.c
+  nvram\src\nvram_l1def.c
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+

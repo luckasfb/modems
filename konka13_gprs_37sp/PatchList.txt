@@ -1,0 +1,20 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03033944
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [ChangeFeature][SST] print out memory regions to be dumped before handovering to TST
+  print out memory regions to be dumped before handovering to TST
+Associated Files: 
+  mtk_lib\MT6573\S01\GPRS\kal.lib
+  mtk_lib\MT6573\S01\GPRS\sst.lib
+
+
+

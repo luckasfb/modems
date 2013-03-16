@@ -1,0 +1,328 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02972224
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Modify the GPIO setting for MT6162
+  Force GPIO 27~30 to BSI1 for MT6162 on MT6573, and GPIO 31~34 to BSI0 for other 2G RF chips
+Associated Files: 
+  l1_dm\l1d\m12190.c
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02967392
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+  Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+Associated Files: 
+  l1_dm\l1d\l1d_data.c
+  l1_dm\l1d\l1d_data.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12197.c
+  l1_dm\l1d\m12197.h
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+  mtk_lib\MT6573\S01\GPRS\interface_classb.lib
+  mtk_lib\MT6573\S01\GPRS\cct.lib
+  mtk_lib\MT6573\S01\GPRS\ft.lib
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02936962
+Severity:    N/A
+eService ID: N/A
+Description: 
+  Disable EGSM Capability [add feature option: DISABLE_EGSM_CAP]
+  Dynmically switch the band setting of enable/disable EGSM band but without release the MODEM lib to customer.
+Associated Files: 
+  custom\app\MT6573V2_MODEM_BB\nvram_user_custpack.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\MT6573V2_MODEM_GPRS(ANDROID_GEMINI_OH).mak
+
+
+
+#==============================================================================
+# CR list that MediaTek patched for build error(s)
+# ------------------------
+# For each of these CRs were used to solve build errors that caused by above patch.
+#==============================================================================
+Patch Type:  Build Error Patch
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02936962
+Severity:    N/A
+eService ID: N/A
+Description: 
+  Disable EGSM Capability
+  Dynmically switch the band setting of enable/disable EGSM band but without release the MODEM lib to customer.
+Associated Files: 
+  custom\app\CAP16_BB\nvram_user_custpack.c
+  custom\app\DS269_BB\nvram_user_custpack.c
+  custom\app\E1K16_MODEM_BB\nvram_user_custpack.c
+  custom\app\E1K16_MODEM_MT6140_BB\nvram_user_custpack.c
+  custom\app\HUSKY16_MODEM_BB\nvram_user_custpack.c
+  custom\app\JRD73_GIN_MODEM_BB\nvram_user_custpack.c
+  custom\app\LENOVO73V2_MODEM_BB\nvram_user_custpack.c
+  custom\app\MT6516_EVB\nvram_user_custpack.c
+  custom\app\MT6516_EVB_AP\nvram_user_custpack.c
+  custom\app\MT6516E2_EVB\nvram_user_custpack.c
+  custom\app\MT6573_AST2001_EVB\nvram_user_custpack.c
+  custom\app\MT6573_E2_AST2001_EVB\nvram_user_custpack.c
+  custom\app\MT6573_EVB\nvram_user_custpack.c
+  custom\app\MT6573V2_MODEM_BB\nvram_user_custpack.c
+  custom\app\NAMI70_DEMO_BB\nvram_user_custpack.c
+  custom\app\PIONEER68_DEMO_BB\nvram_user_custpack.c
+  custom\app\ZTE73V1_MODEM_BB\nvram_user_custpack.c
+  custom\app\ZTE73V2_MODEM_BB\nvram_user_custpack.c
+  custom\app\ZTE73V31_MODEM_BB\nvram_user_custpack.c
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03041360
+Severity:    N/A
+eService ID: N/A
+Description: 
+  create new projects (10/03~10/14)
+Associated Files: 
+  custom\app\SIMCOM13_BU2_MODEM_BB\app_features.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\app_features.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\custom_led_patterns.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\custom_led_patterns.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\custom_mmi_cache_config.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\custom_nvram_editor_data_item.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\nvram_user_config.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\nvram_user_custpack.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\nvram_user_defs.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\resource_custpack_jtbl.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\resource_custpack_jtbl.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\resource_verno.h
+  custom\app\SIMCOM13_BU2_MODEM_BB\text_encoding.c
+  custom\app\SIMCOM13_BU2_MODEM_BB\text_encoding.h
+  custom\audio\SIMCOM13_BU2_MODEM_BB\afe.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\AR1000.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\audcoeff.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\custpack_audio.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\ext_dac_drv.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\i2s_input_drv.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\MT6188.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\MT6189.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\MT6616.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\nvram_default_audio.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\nvram_default_audio.h
+  custom\audio\SIMCOM13_BU2_MODEM_BB\resource_audio.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\resource_audio.h
+  custom\audio\SIMCOM13_BU2_MODEM_BB\resource_audio_func.c
+  custom\audio\SIMCOM13_BU2_MODEM_BB\resource_audio_jtbl.c
+  custom\drv\gps\SIMCOM13_BU2_MODEM_BB\gpsmtk_config.c
+  custom\drv\LCD\SIMCOM13_BU2_MODEM_LCM\lcd.c
+  custom\drv\LCD\SIMCOM13_BU2_MODEM_LCM\lcd_hw.h
+  custom\drv\LCD\SIMCOM13_BU2_MODEM_LCM\lcd_sw.h
+  custom\drv\LCD\SIMCOM13_BU2_MODEM_LCM\lcd_sw_inc.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\adc_channel.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\adc_channel.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\alerter_tone.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\alerterdrv.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\aux_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\aux_custom.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\batvalue.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\chr_parameter.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\chr_parameter.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\cmmb_custom_if.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_drv_init.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_equipment.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_equipment.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_hw_default.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_hw_default.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_idp.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_idp.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\custom_sim_driver.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\eint_def.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\exif_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\gpio_def.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\gpio_drv.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\irda_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\keypad_def.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\msdc_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\MT6302_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\MT6302_custom.h
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\pmic_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\pmu_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\pwmdrv.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\touch_panel_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\touch_panel_spi.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\tv_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\two_mic_NR_custom_if.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\uart_def.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\uem_gpio.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\usb_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\usb_host_ms_custom.c
+  custom\drv\misc_drv\SIMCOM13_BU2_MODEM_BB\codegen\codegen.dws
+  custom\meta\SIMCOM13_BU2_MODEM_BB\ft_customize.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\custom_poc_config.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_cm_retry_count.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_ps_inc.h
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_pwr_level_report.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\Customer_sim_voltage_support.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_sms_discard_patent.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_sms_msg_box_num.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_sms_prefer_order.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_sms_tl_retry.c
+  custom\ps\SIMCOM13_BU2_MODEM_BB\customer_supc_config.c
+  custom\system\SIMCOM13_BU2_MODEM_BB\custom_MemoryDevice.h
+  make\SIMCOM13_BU2_MODEM_GPRS.mak
+  make\Verno_SIMCOM13_BU2_MODEM.bld
+  mtk_lib\MT6573\S01\GPRS\l4_classb.lib
+  mtk_lib\MT6573\S01\GPRS\cct.lib
+  mtk_lib\MT6573\S01\GPRS\l1_classb_g2.lib
+  mtk_lib\MT6573\S01\GPRS\rr_classb2.lib
+  mtk_lib\MT6573\S01\GPRS\applib.lib
+  mtk_lib\MT6573\S01\GPRS\ft.lib
+  mtk_lib\MT6573\S01\GPRS\gps.lib
+  mtk_lib\MT6573\S01\GPRS\mm_classb2.lib
+  mtk_lib\MT6573\S01\GPRS\sim2.lib
+  mtk_lib\MT6573\S01\GPRS\sm.lib
+  mtk_lib\MT6573\S01\GPRS\stacklib.lib
+  mtk_lib\MT6573\S01\GPRS\flc2.lib
+  mtk_lib\MT6573\S01\GPRS\gfx_core16.lib
+  mtk_lib\MT6573\S01\GPRS\nvram_sec.lib
+  mtk_lib\MT6573\S01\GPRS\tst.lib
+  mtk_lib\MT6573\S01\GPRS\audio_comp.lib
+  mtk_lib\MT6573\S01\GPRS\camera_sec.lib
+  mtk_lib\MT6573\S01\GPRS\che.lib
+  mtk_lib\MT6573\S01\GPRS\fdm.lib
+  mtk_lib\MT6573\S01\GPRS\gfx_core32.lib
+  mtk_lib\MT6573\S01\GPRS\init.lib
+  mtk_lib\MT6573\S01\GPRS\ppp.lib
+  mtk_lib\MT6573\S01\GPRS\sst.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\SIMCOM13_BU2_MODEM_GPRS.mak
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+
+

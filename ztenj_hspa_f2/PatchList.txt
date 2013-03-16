@@ -1,0 +1,47 @@
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  custom\common\custom_nvram_sec.c
+  custom\common\custom_nvram_sec.h
+  make\ZTENJ73_MODEM_HSPA.mak
+  mtk_lib\MT6573\S01\hspa\applib.lib
+  mtk_lib\MT6573\S01\hspa\cct.lib
+  mtk_lib\MT6573\S01\hspa\flc2.lib
+  mtk_lib\MT6573\S01\hspa\ft.lib
+  mtk_lib\MT6573\S01\hspa\gps.lib
+  mtk_lib\MT6573\S01\hspa\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\hspa\l4_classb.lib
+  mtk_lib\MT6573\S01\hspa\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\hspa\nvram_sec.lib
+  mtk_lib\MT6573\S01\hspa\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\hspa\sim2.lib
+  mtk_lib\MT6573\S01\hspa\sm.lib
+  mtk_lib\MT6573\S01\hspa\tst.lib
+  mtk_lib\MT6573\S01\hspa\uas.lib
+  mtk_lib\MT6573\S01\hspa\ul1_hs.lib
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03055015
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MoDIS] MoDIS release miss tst\database_modis\mcddll.dll
+Associated Files: 
+  MoDIS_VC9\modisReleaseL2obj.pl
+  MoDIS_VC9\modisReleaseL2src.pl
+  MoDIS_VC9\modisReleaseVendor.pl
+
+
+
