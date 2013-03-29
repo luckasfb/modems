@@ -1,4 +1,4 @@
-MT6573-modems
+MTK-modems
 =============
 
-Modems for MT6573
+Modems for MTK platform
