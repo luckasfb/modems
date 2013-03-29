@@ -1,0 +1,459 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02973698
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C]Modem support Fast dormancy
+Associated Files: 
+  hal\system\ipc\src\ccci.c
+  interface\hal\system\ccci.h
+  interface\ps\sap\ps_public_l4_sap.h
+  mtk_lib\MT6573\S01\HSPA\kal.lib
+  mtk_lib\MT6573\S01\HSPA\sst.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\3g324m_tvt.lib
+  mtk_lib\MT6573\S01\HSPA\adaptation.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\as_semaphore_utility.lib
+  mtk_lib\MT6573\S01\HSPA\asn1_re.lib
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+  mtk_lib\MT6573\S01\HSPA\camera_sec.lib
+  mtk_lib\MT6573\S01\HSPA\cc.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\che.lib
+  mtk_lib\MT6573\S01\HSPA\ciss.lib
+  mtk_lib\MT6573\S01\HSPA\cmux.lib
+  mtk_lib\MT6573\S01\HSPA\config.lib
+  mtk_lib\MT6573\S01\HSPA\data.lib
+  mtk_lib\MT6573\S01\HSPA\dp_engine.lib
+  mtk_lib\MT6573\S01\HSPA\drv_sec.lib
+  mtk_lib\MT6573\S01\HSPA\fdm.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\fsm.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core16.lib
+  mtk_lib\MT6573\S01\HSPA\gfx_core32.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\init.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\ll1.lib
+  mtk_lib\MT6573\S01\HSPA\llc.lib
+  mtk_lib\MT6573\S01\HSPA\mcd.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\mtkdebug.lib
+  mtk_lib\MT6573\S01\HSPA\nucleus_v2.lib
+  mtk_lib\MT6573\S01\HSPA\nucleus_v2_ctrl_code.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\ppp.lib
+  mtk_lib\MT6573\S01\HSPA\ratcm.lib
+  mtk_lib\MT6573\S01\HSPA\ratdm.lib
+  mtk_lib\MT6573\S01\HSPA\rfc2507.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\rrlp.lib
+  mtk_lib\MT6573\S01\HSPA\rsva.lib
+  mtk_lib\MT6573\S01\HSPA\scsi.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\sms.lib
+  mtk_lib\MT6573\S01\HSPA\sndcp.lib
+  mtk_lib\MT6573\S01\HSPA\stacklib.lib
+  mtk_lib\MT6573\S01\HSPA\sys_sec.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  mtk_lib\MT6573\S01\HSPA\ulcs.lib
+  mtk_lib\MT6573\S01\HSPA\ups.lib
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02962284
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [Critical][Power consumption]3G modem can't sleep when signal is weak
+  Unlock L1 when entering PCH with URB existed.
+  
+Associated Files: 
+  make\uas\uas.mak
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02961551
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MakeFile] [Remove: Feature Option] remove DUALMACDSP_BIN and DUALMACDSP_BL_BIN in project makefile for VITI
+Associated Files: 
+  dsp_bin\MT6573_E2_REL_BL.bin
+  dsp_bin\MT6573_REL_BL.bin
+  dsp_bin\MT6573_S00(SMARTPHONE)_REL_BL.bin
+  dsp_bin\MT6573_S01(SMARTPHONE)_REL_BL.bin
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02976891
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [UL1D][Modify] Enable PA phase rotation compensation
+  Enable PA phase compensation feature and default value of compensation is zero phase
+Associated Files: 
+  custom\ul1_rf\CUSTOM_MT6162\u12193.c
+  ul1_hs\ul1d\ul1d_rf.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02984752
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C] AT+EBOOT support for change power on mode
+  AT+EBOOT=0   => normal boot up
+  AT+EBOOT=1   =>  exception boot up
+  
+  AT+EBOOT should used before the first AT+CFUN/AT+EFUN/CFUN_STATE_REQ/EFUN_STATE_REQ
+Associated Files: 
+  ps\l4\atci\include\at_cmd.def
+  ps\l4\l4c\include\proc\l4c_eq_cmd.h
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_02986122
+Severity:    2.Normal
+eService ID: N/A
+Description: 
+  Add MD reset handling in audio driver (This CR link with ALPS00060425)
+  Add modem reset mechanism to protect SpeechOff, SndClose, PCMWAY_Stop
+Associated Files: 
+  hal\audio\src\v2\spc_drv.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02984752
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C] AT+EBOOT support for change power on mode
+  AT+EBOOT=0   => normal boot up
+  AT+EBOOT=1   =>  exception boot up
+  
+  AT+EBOOT should used before the first AT+CFUN/AT+EFUN/CFUN_STATE_REQ/EFUN_STATE_REQ
+Associated Files: 
+  ps\l4\atci\include\at_cmd.def
+  ps\l4\l4c\include\proc\l4c_eq_cmd.h
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_02986122
+Severity:    2.Normal
+eService ID: N/A
+Description: 
+  Add MD reset handling in audio driver (This CR link with ALPS00060425)
+  Add modem reset mechanism to protect SpeechOff, SndClose, PCMWAY_Stop
+Associated Files: 
+  hal\audio\src\v2\spc_drv.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02971615
+Severity:    N/A
+eService ID: N/A
+Description: 
+  fix error of custominfo.pl to match the correct flavor name
+  done
+Associated Files: 
+  tools\custominfo.pl
+
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02985447
+Severity:    N/A
+eService ID: N/A
+Description: 
+  Remove the dependency of MAUI_02972090 and MAUI_02974205 for rollback
+  done
+Associated Files: 
+  hal\audio\src\v2\audio_service.c
+  hal\audio\src\v2\pcm4way.c
+  hal\audio\src\v2\sp_drv.c
+  hal\audio\src\v2\spc_drv.c
+  hal\audio\src\v2\inc\audio_em_struct.h
+  hal\audio\src\v2\inc\exp_SphFasTypDef.h
+  interface\hal\audio\audio_enum.h
+  mtk_lib\MT6573\S01\HSPA\audio_comp.lib
+
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02976891
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [UL1D][Modify] Enable PA phase rotation compensation
+  Enable PA phase compensation feature and default value of compensation is zero phase
+Associated Files: 
+  custom\ul1_rf\CUSTOM_MT6162\u12193.c
+  ul1_hs\ul1d\ul1d_rf.h
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02972224
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Modify the GPIO setting for MT6162
+  Force GPIO 27~30 to BSI1 for MT6162 on MT6573, and GPIO 31~34 to BSI0 for other 2G RF chips
+Associated Files: 
+  l1_dm\l1d\l1d_data.c
+  l1_dm\l1d\l1d_data.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12197.c
+  l1_dm\l1d\m12197.h
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\interface_classb.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+
+
+
+#==============================================================================
+# CR list that MediaTek patched for build error(s)
+# ------------------------
+# For each of these CRs were used to solve build errors that caused by above patch.
+#==============================================================================
+Patch Type:  Build Error Patch
+CR ID:       MAUI_02967392
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+  Add  TX_PROPAGATION_DELAY Variable into RF Custom Tool Feature
+Associated Files: 
+  DEP_CR_LIST.txt
+  l1_dm\l1d\l1d_data.c
+  l1_dm\l1d\l1d_data.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12191.c
+  l1_dm\l1d\m12197.c
+  l1_dm\l1d\m12197.h
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\interface_classb.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02979076
+Severity:    N/A
+eService ID: N/A
+Description: 
+  GPT race condition merge back to 11A_MD.
+Associated Files: 
+  hal\peripheral\src\dcl_gpt.c
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_02990627
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L4C] Revise for AT+ICCID to avoid 0x0F
+  Normally, ICCID is 19 or 20 digits numeric string.
+  But for special SIM card, it contains F within the string.
+  AT+ICCID can't print full strin, then AP can't distinquish these kind of SIM card.
+  
+  Revise:
+  Always print the whole string, even it is not numeric.
+Associated Files: 
+  ps\l4\l4c\include\common\l4c_utility.h
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02919699
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] modify bug for check action
+Associated Files: 
+  hal\viti\make.pl
+  hal\viti\tools\parse_comp_err.pl
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_02944669
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Makefile][VITI] enhance build_viti.pl for viti bin file
+Associated Files: 
+  make2.pl
+  make\internal_action.mak
+
+
+

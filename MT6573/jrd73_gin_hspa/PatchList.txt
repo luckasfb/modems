@@ -1,0 +1,175 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03007555
+Severity:    N/A
+eService ID: N/A
+Description: 
+  @Passport for project creation 0817 make file
+Associated Files: 
+  custom\l1_rf\JRD73_GIN_MODEM_MT6162\l1d_custom_rf.h
+  custom\l1_rf\JRD73_GIN_MODEM_MT6162\m12193.c
+  custom\ul1_rf\JRD73_GIN_MODEM_MT6162\u12193.c
+  custom\ul1_rf\JRD73_GIN_MODEM_MT6162\ul1d_custom_rf.h
+  make\JRD73_GIN_MODEM_HSPA.mak
+  mtk_lib\MT6573\S01\HSPA\cct.lib
+  mtk_lib\MT6573\S01\HSPA\ft.lib
+  mtk_lib\MT6573\S01\HSPA\l1_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\applib.lib
+  mtk_lib\MT6573\S01\HSPA\flc2.lib
+  mtk_lib\MT6573\S01\HSPA\gps.lib
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\nvram_sec.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\sim2.lib
+  mtk_lib\MT6573\S01\HSPA\sm.lib
+  mtk_lib\MT6573\S01\HSPA\tst.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+  mtk_lib\MT6573\S01\HSPA\ul1_hs.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03011405
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [L1D][Modify] Check-in 11AW1119SP JRDC specific RF customer folder for their calibration data default value
+Associated Files: 
+  custom\l1_rf\JRD73_GIN_MODEM_MT6162\m12193.c
+  custom\ul1_rf\JRD73_GIN_MODEM_MT6162\u12193.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  make\JRD73_GIN_MODEM_HSPA.mak
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03012037
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [SMSAL][FixBug] SMSP display incorrect after Refresh command
+  [Reason]
+  Original MTK design doesn't support refresh rmi parameter when SIM Rresh.
+  This will cause smart phone project AP get old value from modem.
+  
+  [Solution]
+  When SIM refresh, also refresh rmi parameter
+  
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03026482
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [GIN-Dual-SIM-NITZ]Doesn't support UCS2 code scheme for NITZ network name
+Associated Files: 
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request
+CR ID:       MAUI_03010692
+Severity:    N/A
+eService ID: N/A
+Description: 
+  SW AGC Initialize Condition Change
+Associated Files: 
+  DEP_CR_LIST.txt
+  hal\audio\src\v2\audio_service.c
+  hal\audio\src\v2\sp_drv.c
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03023838
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [MMS]Insert FDN card and send MMS,it will not popup "FDN only"
+  [Build Note]
+  It requires
+  (1) codegen
+  (2) c,r l4
+  and release l4_classb.lib and new catcher database.
+  
+  [Solution]
+  Patch NDIS FDN check to 11AMDW1119SP
+  
+  [AP dependency]
+  This CR is copied from ALPS00072592.
+  It requires AP patch to have correct UI display.
+  
+Associated Files: 
+  custom\common\ps\custom_l4_utility.c
+  ps\l4\include\l4_trc.h
+  ps\l4\include\l4c_context.h
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+
+
+Patch Type:  Customer Request
+CR ID:       MAUI_03029807
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [GIN-Dual-SIM][REG][Settings]Mobile phone no network after restart phone
+  [Reason]
+  Specail SIM which will modify update status stored in EF_LOCI will make the UE stay in limited service when the UE power on in manual mode
+  
+  [Solution]
+  Derive RPLMN from NVRAM if needed
+Associated Files: 
+  DEP_CR_LIST.txt
+  tst\database_modis\gv\monza_mm_common_basic.gv
+  tst\database_modis\gv\monza_mm_common_gemini_basic.gv
+  mtk_lib\MT6573\S01\HSPA\l4_classb.lib
+  mtk_lib\MT6573\S01\HSPA\mm_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\rr_classb_umts.lib
+  mtk_lib\MT6573\S01\HSPA\uas.lib
+
+
+
