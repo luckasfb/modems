@@ -1,0 +1,40 @@
+#==============================================================================
+# CR list that customer request but not release
+# -----------------------------------------
+# These CRs are not included in this release probably due to
+#   1. The patch files were already up-to-date in customer site
+#   2. The patch files belong to an unsupported feature
+#==============================================================================
+MAUI_03187706
+MAUI_02972090
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  patched on Patch_LCSH15CU_GPRS_11AMDW1150SP_V16_P1_i120528
+CR ID:       MAUI_03120652
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a01a8
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+Patch Type:  patched on Patch_LCSH15CU_GPRS_11AMDW1150SP_V16_P1_i120602
+CR ID:       MAUI_03196167
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a03ec
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+

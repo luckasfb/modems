@@ -1,0 +1,126 @@
+#==============================================================================
+# CR list that customer request but not release
+# -----------------------------------------
+# These CRs are not included in this release probably due to
+#   1. The patch files were already up-to-date in customer site
+#   2. The patch files belong to an unsupported feature
+#==============================================================================
+MAUI_03113160
+MAUI_03167514
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request on Patch_LCSH15_6626_GPRS_11AMDW1150SP_V16_P4
+CR ID:       MAUI_03183981
+Severity:    N/A
+eService ID: N/A
+Description: 
+  使用fm时进行录音，录音完成后系统有明显pop音
+  Update the usage of AUDIO_CON3
+Associated Files: 
+  hal\audio\src\v2\afe2.c
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  patched on Patch_LCSH15_6626_GPRS_11AMDW1150SP_V16_P1_i120528
+CR ID:       MAUI_03120652
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a01a8
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+Patch Type:  patched on Patch_LCSH15_6626_GPRS_11AMDW1150SP_V16_P1_i120602
+CR ID:       MAUI_03196167
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a03ec
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+Patch Type:  patched on Patch_LCSH15_6626_GPRS_11AMDW1150SP_V16_P1
+CR ID:       MAUI_03177468
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [(U)L1D/PD][Modify] Enable/Disable the Vrf18 force PWM mode when RF is on/off
+  Dynamically enable/disable the fore PWM mode on Vrf18 when RF is on/off
+Associated Files: 
+  hal\peripheral\inc\dcl_pmic6329_hw.h
+  hal\peripheral\src\dcl_pmic6329.c
+  interface\hal\peripheral\dcl_pmu.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12190.h
+  mtk_lib\MT6575\S01\gprs\applib.lib
+  mtk_lib\MT6575\S01\gprs\audio_comp.lib
+  mtk_lib\MT6575\S01\gprs\cct.lib
+  mtk_lib\MT6575\S01\gprs\cmux.lib
+  mtk_lib\MT6575\S01\gprs\config.lib
+  mtk_lib\MT6575\S01\gprs\data.lib
+  mtk_lib\MT6575\S01\gprs\drv_sec.lib
+  mtk_lib\MT6575\S01\gprs\flc2.lib
+  mtk_lib\MT6575\S01\gprs\ft.lib
+  mtk_lib\MT6575\S01\gprs\gps.lib
+  mtk_lib\MT6575\S01\gprs\init.lib
+  mtk_lib\MT6575\S01\gprs\kal.lib
+  mtk_lib\MT6575\S01\gprs\l1_classb_g2.lib
+  mtk_lib\MT6575\S01\gprs\l4_classb.lib
+  mtk_lib\MT6575\S01\gprs\mm_classb2.lib
+  mtk_lib\MT6575\S01\gprs\nvram_sec.lib
+  mtk_lib\MT6575\S01\gprs\ppp.lib
+  mtk_lib\MT6575\S01\gprs\ratdm.lib
+  mtk_lib\MT6575\S01\gprs\rr_classb2.lib
+  mtk_lib\MT6575\S01\gprs\rrlp.lib
+  mtk_lib\MT6575\S01\gprs\sim2.lib
+  mtk_lib\MT6575\S01\gprs\sm.lib
+  mtk_lib\MT6575\S01\gprs\sndcp.lib
+  mtk_lib\MT6575\S01\gprs\sst.lib
+  mtk_lib\MT6575\S01\gprs\tst.lib
+  mtk_lib\MT6575\S01\gprs\ups.lib
+
+
+Patch Type:  patched on Patch_LCSH15_6626_GPRS_11AMDW1150SP_V16_P1
+CR ID:       MAUI_03197571
+Severity:    1.Critical
+eService ID: N/A
+Description: 
+  [L1D][Critical Patch] Improve the robustness of BSI IMM write
+  Improve the robustness of BSI IMM write
+  => add dummy read
+Associated Files: 
+  l1_dm\l1d\l1d_cid.h
+  l1_dm\l1d\l1d_reg.h
+  l1_dm\l1d\m12190.c
+  l1_dm\l1d\m12196.c
+  mtk_lib\MT6575\S01\gprs\audio_comp.lib
+  mtk_lib\MT6575\S01\gprs\cct.lib
+  mtk_lib\MT6575\S01\gprs\ft.lib
+  mtk_lib\MT6575\S01\gprs\interface_classb.lib
+  mtk_lib\MT6575\S01\gprs\kal.lib
+  mtk_lib\MT6575\S01\gprs\l1_classb_g2.lib
+  mtk_lib\MT6575\S01\gprs\l4_classb.lib
+  mtk_lib\MT6575\S01\gprs\nucleus_v2_ctrl_code.lib
+  mtk_lib\MT6575\S01\gprs\sst.lib
+  mtk_lib\MT6575\S01\gprs\sys_sec.lib
+  mtk_lib\MT6575\S01\gprs\tst.lib
+
+
+
