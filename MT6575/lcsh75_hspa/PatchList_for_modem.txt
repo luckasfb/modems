@@ -1,0 +1,58 @@
+#==============================================================================
+# CR list that customer request but not release
+# -----------------------------------------
+# These CRs are not included in this release probably due to
+#   1. The patch files were already up-to-date in customer site
+#   2. The patch files belong to an unsupported feature
+#==============================================================================
+MAUI_02972090
+
+
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:  Customer Request on Patch_LCSH75_HSPA_11AMDW1150SP_V16_P1
+CR ID:       MAUI_03187706
+Severity:    1.Critical
+eService ID: MAUI_03187706
+Description: 
+  [UL1D][Critical][1226SP_NOT_NEED]Solve MT6276, MT6573, MT6577 phone reboot during data connection with HSUPA
+  patch id：MAUI_03187706 
+Associated Files: 
+  mtk_lib\MT6575\S01\hspa\ul1_hs.lib
+
+
+
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  patched on Patch_LCSH75_HSPA_11AMDW1150SP_V16_P1_i120528
+CR ID:       MAUI_03120652
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a01a8
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+Patch Type:  patched on Patch_LCSH75_HSPA_11AMDW1150SP_V16_P1_i120602
+CR ID:       MAUI_03196167
+Severity:    N/A
+eService ID: N/A
+Description: 
+  [Bug Fix] fix the open excel problem for error 0x800a03ec
+Associated Files: 
+  tools\3rdPartiesLicChk.pl
+
+
+
